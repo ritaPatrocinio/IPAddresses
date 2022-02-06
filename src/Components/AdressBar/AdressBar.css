@@ -1,0 +1,25 @@
+.AdressBar {
+    
+    position: absolute;
+    top: 27%;
+    left: 25%;
+    right: 25%;
+    background-color: white;
+    padding: 1% 1%;
+    border-radius: 30px;
+    z-index: 401;
+}
+
+.label {
+    color: #757575;
+    font-size: 80%;
+}
+
+.square {
+    padding: 0 4%;
+}
+
+.center {
+    justify-content: center;
+    display: flex;
+}
