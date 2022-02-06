@@ -57,7 +57,7 @@ function App() {
       } 
       )};
 
-    //useEffect(() => getLocation(), [])
+    useEffect(() => getLocation(), [])
 
   return (
     <div className="App">
