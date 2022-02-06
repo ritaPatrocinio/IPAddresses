@@ -5,7 +5,7 @@ import {AdressBar} from './Components/AdressBar/AdressBar';
 import {Map} from './Components/Map/Map';
 
 function App() {
-  const [showResults, setShowResults] = useState(true);
+  const [showResults, setShowResults] = useState(false);
 
   const [searchResults, setSearchResults] = useState({
     "ip": "8.8.8.8",
