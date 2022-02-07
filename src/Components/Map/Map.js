@@ -1,10 +1,15 @@
 import React, { useState, useEffect, useRef } from "react";
 import './Map.css';
 import 'leaflet/dist/leaflet.css'
-import L, { point } from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from 'react-leaflet';
-// import { Icon } from "leaflet";
-import points from './images/marker-icon.png'
+import * as L from 'leaflet';
+delete L.Icon.Default.prototype._getIconUrl;
+
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: require('leaflet/dist/images/marker-icon-2x.png'),
+  iconUrl: require('leaflet/dist/images/marker-icon.png'),
+  shadowUrl: require('leaflet/dist/images/marker-shadow.png'),
+});
 
 
 export function Map({location}){
@@ -19,7 +24,7 @@ function LocationMarker() {
 
     return  (
       <Marker position={location}>
-        <Popup>You are here</Popup>
+        <Popup>IP Address is here</Popup>
       </Marker>
     )
   }

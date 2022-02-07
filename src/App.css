@@ -25,6 +25,7 @@
 h1 {
   margin-top: 0;
   padding-top: 2%;
+  font-size: 150%;
 }    
 
 .App-link {
@@ -38,4 +39,14 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+
+@media only screen and (max-width: 900px) {
+  
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 140%;
+}
 }

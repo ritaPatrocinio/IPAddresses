@@ -1,18 +1,18 @@
 .AdressBar {
-    
     position: absolute;
-    top: 27%;
-    left: 25%;
-    right: 25%;
+    top: 29%;
+    left: 27%;
+    right: 27%;
     background-color: white;
-    padding: 1% 1%;
-    border-radius: 30px;
+    padding: 20px 0%;
+    border-radius: 18px;
     z-index: 401;
 }
 
 .label {
     color: #757575;
-    font-size: 80%;
+    font-size: 70%;
+    margin: 0 0 8px 0%;
 }
 
 .square {
@@ -22,4 +22,34 @@
 .center {
     justify-content: center;
     display: flex;
+}
+
+@media only screen and (max-width: 1300px) {
+    .AdressBar {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        right: 20%;
+        padding: 20px 0%;
+    }    
+}
+
+@media only screen and (max-width: 900px) {
+    .AdressBar {
+        position: absolute;
+        top: 25%;
+        left: 10%;
+        right: 10%;
+        padding: 20px 0%;
+    }    
+}
+
+@media only screen and (max-width: 550px) {
+    .AdressBar {
+        position: absolute;
+        top: 22%;
+        left: 2%;
+        right: 2%;
+        padding: 20px 0%;
+    }    
 }
