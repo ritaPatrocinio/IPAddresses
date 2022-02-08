@@ -16,12 +16,14 @@
 }
 
 .square {
-    padding: 0 4%;
+    padding: 0 1%;
 }
 
 .center {
     justify-content: center;
     display: flex;
+    place-content: space-between;
+    padding: 2% 3%;
 }
 
 @media only screen and (max-width: 1300px) {
